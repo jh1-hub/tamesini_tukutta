@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>センター概要 - 遠隔授業配信センター</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+  
+  <!-- ナビゲーション -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="index.html" class="flex items-center gap-2">
+            <div class="bg-blue-600 text-white p-2 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <span class="font-bold text-xl tracking-tight text-slate-900" id="site-title"></span>
+          </a>
+        </div>
+        <nav class="hidden md:flex items-center space-x-1">
+          <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">ホーム</a>
+          <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium text-blue-700 bg-blue-50">センター概要</a>
+          <a href="academics.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">授業・サポート</a>
+          <a href="network.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">連携校一覧</a>
+          <a href="resources.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">資料・FAQ</a>
+          <a href="contact.html" class="px-3 py-2 rounded-md text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900">お問い合わせ</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="py-12 bg-slate-50 min-h-screen">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <h1 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">センター概要</h1>
+        <p class="text-lg text-slate-600">当センターのミッション・目的と、運営体制についてご紹介します。</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="p-2 bg-blue-100 text-blue-600 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+              </div>
+              <h3 class="font-semibold leading-none tracking-tight text-2xl">設置の目的</h3>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="prose prose-slate">
+              <p class="text-slate-700 leading-relaxed" id="about-purpose"></p>
+              <ul class="list-disc pl-5 mt-4 space-y-2 text-slate-700" id="about-purpose-list"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="p-2 bg-emerald-100 text-emerald-600 rounded-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flag"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" x2="4" y1="22" y2="15"/></svg>
+              </div>
+              <h3 class="font-semibold leading-none tracking-tight text-2xl">運営ポリシー・理念</h3>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <div class="prose prose-slate">
+              <blockquote class="border-l-4 border-emerald-500 pl-4 italic text-slate-700 mb-4" id="about-philosophy-quote"></blockquote>
+              <p class="text-slate-700 leading-relaxed" id="about-philosophy-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-16">
+        <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin text-slate-400"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          センターの位置・施設
+        </h2>
+        <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm overflow-hidden">
+          <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="bg-slate-200 min-h-[300px] relative">
+              <img src="https://picsum.photos/seed/building/800/600" alt="Center Building" class="absolute inset-0 w-full h-full object-cover" referrerpolicy="no-referrer">
+            </div>
+            <div class="p-8 flex flex-col justify-center">
+              <h3 class="text-xl font-bold mb-4" id="about-facility-title">遠隔授業配信センター</h3>
+              <p class="text-slate-600 mb-6" id="about-facility"></p>
+              <div class="space-y-2 text-sm text-slate-700">
+                <p><strong>所在地:</strong> <span id="about-address"></span></p>
+                <p><strong>アクセス:</strong> <span id="about-access"></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users text-slate-400"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          スタッフ体制
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="font-semibold leading-none tracking-tight text-lg">センター長</h3>
+            </div>
+            <div class="p-6 pt-0">
+              <p class="text-slate-600" id="about-staff-director"></p>
+            </div>
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="font-semibold leading-none tracking-tight text-lg">専任教員</h3>
+            </div>
+            <div class="p-6 pt-0">
+              <p class="text-slate-600" id="about-staff-teachers"></p>
+              <p class="text-sm text-slate-500 mt-2">各教科の専門性を活かし、質の高い授業を配信します。</p>
+            </div>
+          </div>
+          <div class="rounded-xl border border-slate-200 bg-white text-slate-950 shadow-sm">
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3 class="font-semibold leading-none tracking-tight text-lg">支援スタッフ</h3>
+            </div>
+            <div class="p-6 pt-0">
+              <p class="text-slate-600" id="about-staff-support"></p>
+              <p class="text-sm text-slate-500 mt-2">機器のトラブル対応や、円滑な授業運営をサポートします。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer class="bg-slate-900 text-slate-300 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <div class="bg-blue-600 text-white p-1.5 rounded-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <span class="font-bold text-lg text-white" id="footer-site-title"></span>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-4">リンク</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="about.html" class="hover:text-white transition-colors">センター概要</a></li>
+            <li><a href="academics.html" class="hover:text-white transition-colors">授業・サポート体制</a></li>
+            <li><a href="network.html" class="hover:text-white transition-colors">連携校一覧</a></li>
+            <li><a href="resources.html" class="hover:text-white transition-colors">資料・FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold mb-4">お問い合わせ</h3>
+          <ul class="space-y-2 text-sm text-slate-400" id="footer-contact"></ul>
+        </div>
+      </div>
+      <div class="border-t border-slate-800 mt-8 pt-8 text-sm text-center text-slate-500">
+        &copy; <span id="current-year"></span> 遠隔授業配信センター All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
