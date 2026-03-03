@@ -21,8 +21,7 @@ const siteData = {
     postalCode: "〒000-0000",
     address: "〇〇県〇〇市〇〇町1-2-3",
     phone: "000-000-0000",
-    email: "info@example.com",
-    businessHours: "平日 9:00〜17:00（土日祝・年末年始を除く）",
+    businessHours: "平日 9:00〜16:30（土日祝・年末年始を除く）",
     staff: "〇〇、〇〇", // 見学担当スタッフなど
   },
 
@@ -43,7 +42,6 @@ const siteData = {
     staff: {
       director: "氏名・略歴・メッセージなど",
       teachers: "〇名（国語〇名、数学〇名、英語〇名、理科〇名）",
-      support: "ICT支援員〇名、事務スタッフ〇名",
     }
   },
 
@@ -60,13 +58,6 @@ const siteData = {
   // 5. 連携校一覧（network.html で表示）
   // --------------------------------------------------------------------------
   network: {
-    mapDescription: "現在、県内〇〇校の高校と接続しています。（令和〇年度時点）",
-    regions: [
-      { name: "県北エリア", count: "〇校" },
-      { name: "県央エリア", count: "〇校" },
-      { name: "県南エリア", count: "〇校" },
-      { name: "離島・へき地", count: "〇校" },
-    ],
     schools: [
       { name: "〇〇県立第一高等学校", location: "〇〇市", subjects: "数学、英語", year: "令和〇年度" },
       { name: "〇〇県立第二高等学校", location: "〇〇郡", subjects: "物理、化学", year: "令和〇年度" },

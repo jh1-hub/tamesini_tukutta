@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
       <li>${siteData.contact.postalCode}</li>
       <li>${siteData.contact.address}</li>
       <li>TEL: ${siteData.contact.phone}</li>
-      <li>Email: ${siteData.contact.email}</li>
     `;
   }
 
@@ -78,22 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // 連携校一覧の反映 (network.html)
-  const regionsContainer = document.getElementById('regions-container');
-  if (regionsContainer && siteData.network.regions) {
-    let regionsHTML = '';
-    siteData.network.regions.forEach((item, index) => {
-      const isLast = index === siteData.network.regions.length - 1;
-      const borderClass = isLast ? 'pb-2' : 'border-b border-slate-100 pb-2';
-      regionsHTML += `
-        <div class="flex justify-between items-center ${borderClass}">
-          <span class="font-medium text-slate-800">${item.name}</span>
-          <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">${item.count}</span>
-        </div>
-      `;
-    });
-    regionsContainer.innerHTML = regionsHTML;
-  }
-
   const schoolsTable = document.getElementById('schools-table-body');
   if (schoolsTable && siteData.network.schools) {
     let schoolsHTML = '';
@@ -120,7 +103,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'about-access': siteData.about.access,
     'about-staff-director': siteData.about.staff.director,
     'about-staff-teachers': siteData.about.staff.teachers,
-    'about-staff-support': siteData.about.staff.support,
   };
 
   for (const [id, value] of Object.entries(aboutElements)) {
@@ -141,7 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactElements = {
     'contact-phone': siteData.contact.phone,
     'contact-hours': siteData.contact.businessHours,
-    'contact-email': siteData.contact.email,
     'contact-address': `${siteData.contact.postalCode} ${siteData.contact.address}`,
     'contact-staff': siteData.contact.staff,
   };
